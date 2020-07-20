@@ -1,4 +1,4 @@
-# 문제해결전략
+# 문제해결전략(Devise a plan for solving problems)
 
 ## 1. Understand the problem.
 
@@ -25,3 +25,30 @@
 - 문제에 다른 좀더 쉬운 단계를 풀어보면서 점차 접근하는 방식을 택해야 한다.
 
 ## 5. Look back and refactor
+
+- 결과를 이끌어내었는가?
+- 결과를 다른 식으로 도출 할 수있는가?
+- 한눈에 이해할수있는가?
+- 결과 또는 문제풀이 방법을 다른 문제에 사용할수 있는가?
+- 시간복잡도를 향상시킬수 있는가?
+- 다른 사람들은 어떤식으로 풀이하였는가?
+
+# Master Common problem solving patterns
+
+## Frequency Counters
+
+## Multiple Pointers
+
+- Creating pointers or values that correspond to an index or position and move towards the beginning, end or middle based on a certain condition
+- Very efficient for solving problems with minimal space complexity as well
+
+## Sliding Window Pattern
+
+- This pattern involves creating a window which can either be an array or number from one position to another.
+- Depending on a certain condition, the window either increases or closes(and a new window is created)
+- Very useful for keeping track of a subset of data in an array/strig etc
+
+## Divide And Conquer Pattern(분할정복)
+
+- This pattern involves dividing a data set into smaller chunks and then repeating a process with a subset of data.
+- This pattern can tremendouslt decrease time complexity
