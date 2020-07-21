@@ -25,5 +25,18 @@ let o = func();
 제일 처음, GEC(Global Execution Context)기 생성되고 원시 값은 콜 스택에, 참조 값은 힙에 저장된다.
 
 <img src="../Images/callstack1.png" width="600px">
+<br/>
+<br/>
+그 다음 함수 func()을 실행하게 되고 새로운 FEC(Function Execution Context)가 생성되며 동일하게 원시 값은 스택에, 참조 값은 힙에 저장된다.
+<br/>
+<br/>
 <img src="../Images/callstack2.png" width="600px">
+<br/>
+<br/>
+이후, 함수 func()이 객체 obj를 리턴해서 o에 저장된다. 리턴하기 때문에 FEC는 콜 스택에서 제거된다.
+<br/>
+<br/>
 <img src="../Images/callstack3.png" width="600px">
+<br/>
+<br/>
+전체 코드가 실행이 끝나고 GEC가 콜 스택에서 제거된다. GEC가 제거됨에 따라서, 힙의 객체를 참조하는 스택의 값이 없기 때문에 가비지 컬렉터(Garbage Collector, GC)에 의해 제거된다.
