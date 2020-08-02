@@ -25,3 +25,18 @@ function outer() {
 var func = outer();
 func();
 ```
+여기서 GC(Garbage Collector)가 outer()의 참조를 없앨 것 같지만 내부함수인 inner()가 해당 스코프의 변수인 a를 참조하고 있기 때문에 없애지 않는다. 따라서 스코프 외부에서 inner() 가 실행되도 해당 스코프를 기억하기 때문에 2를 출력하게 된다. 즉, 여기서 클로저는  inner()가 되며 func에 담겨 밖에서도 실행되고 렉시컬 스코프를 기억한다. 
+
+function func() {
+  for (var i=1; i<5; i++) {
+    setTimeout(function() { console.log(i); }, i*500);
+  }
+}
+func(); // 5 5 5 5
+
+function func() {
+  for (let i=1; i<5; i++) {
+    setTimeout(function() { console.log(i); }, i*500);
+  }
+}
+func(); // 1 2 3 4

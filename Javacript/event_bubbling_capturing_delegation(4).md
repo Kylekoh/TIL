@@ -12,7 +12,7 @@
 </body>
 ```
 
-```
+```javascript
 var divs = document.querySelectorAll('div');
 divs.forEach(fuction(div){
 	div.addEventListener('click', logEvent)

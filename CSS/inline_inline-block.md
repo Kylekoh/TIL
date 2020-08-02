@@ -1,3 +1,5 @@
+# block vs inline vs inline-block
+
 | 특징                | block | inline | inline-block |
 | ------------------- | ----- | ------ | ------------ |
 | 상하좌우 마진/패딩  | ✅    | ❌     | ✅           |
